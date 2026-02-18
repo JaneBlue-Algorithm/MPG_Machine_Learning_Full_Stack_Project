@@ -19,7 +19,7 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 
 templates = Jinja2Templates(directory="templates")
 
-pipeline = joblib.load("mpg_pipeline.pkl")
+pipeline = joblib.load("mpg_rf_pipeline.pkl")
 feature_columns = joblib.load("features.pkl")
 
 
