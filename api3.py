@@ -86,19 +86,9 @@ def predict_form(
     )
 # ------------------------------------------------------------------
 
-# @app.post("/predict")
-# def predict(data: CarFeatures):
-
-#     df = pd.DataFrame([data.dict()])
-#     df = df[feature_columns]  # kolon sırası garanti
-
-#     prediction = pipeline.predict(df)[0]
-
-#     return {"predicted_mpg": float(prediction)}
-
 
 # python -m uvicorn api3:app --reload
-# swagger da kullanacagim data 
+# swagger da kullanilacak data 
 # {
 #   "weight": 2000.0,
 #   "acceleration": 16.0,
@@ -106,3 +96,6 @@ def predict_form(
 #   "origin_japan": 1,
 #   "origin_usa": 0
 # }
+
+# render.com a yuklendi
+# Proje Linki: https://mpg-machine-learning-full-stack-project.onrender.com/
